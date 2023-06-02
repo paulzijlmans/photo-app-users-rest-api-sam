@@ -16,6 +16,9 @@ import java.util.UUID;
 public class PostHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
     public APIGatewayProxyResponseEvent handleRequest(final APIGatewayProxyRequestEvent input, final Context context) {
+        var logger = context.getLogger();
+        logger.log("Handling HTTP Post request for the /users API endpoint");
+
         var requestBody = input.getBody();
 
         var gson = new Gson();

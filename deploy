@@ -1,2 +1,2 @@
 #!/bin/bash
-sam deploy --guided
+sam deploy

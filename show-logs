@@ -1,0 +1,2 @@
+#!/bin/bash
+sam logs --name PostHandlerLambdaFunction --stack-name PhotoAppUsersRestAPI
